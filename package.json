@@ -1,12 +1,16 @@
 {
   "scripts": {
     "start": "node ./bin/www",
-    "rxjs": "babel-node ./rxjs",
-    "dev": "NODE_ENV=development npm-run-all rxjs"
-  
+    "promise": "babel-node ./promise",
+    "dev": "NODE_ENV=development npm-run-all promise"
   },
   "dependencies": {
-    "npm-run-all": "^4.1.5"
+    "@types/q": "^1.5.2",
+    "bluebird": "^3.7.1",
+    "http": "0.0.0",
+    "http-client": "^4.3.1",
+    "npm-run-all": "^4.1.5",
+    "q": "^1.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
